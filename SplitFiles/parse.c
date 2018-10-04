@@ -36,7 +36,9 @@ void setFile(int y)
 
 void setSaveFile()
 {
-    saveFile = fopen("draw.txt", "w");
+    char name[20];
+    sprintf(name, "%s.txt", fileName);
+    saveFile = fopen(name, "w");
 }
 
 void printToFile()
