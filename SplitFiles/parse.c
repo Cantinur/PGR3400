@@ -15,32 +15,35 @@ The main function should parse parameters and call the separate merging system.
 */
 
 static FILE *files[3], *saveFile;
-char *left, *middel, *rigth;
+char *left, *middel, *rigth, *filePath;
 
-void setFile(char* fileName, int y){
-    char* filePath = (char*) calloc(50, sizeof(char));
-
+void setFile(char* fileName, int y)
+{
+    filePath = (char*) calloc(50, sizeof(char));
+    
     for(int i = 0; i < 3; i++){
-        sprintf(filePath, "./%c/part_%d_%d_%c", *fileName, i, y, *fileName);
-
+        sprintf(filePath, "./%s/part_%d_%d_%s.txt", fileName, i, y, fileName);    
         files[i] = fopen(filePath, "r");
     }
 
     free(filePath);
 }
 
-void setSaveFile(){
+void setSaveFile()
+{
     saveFile = fopen("draw.txt", "w");
 }
 
-void print(){
+void print()
+{
     for (int i = 0; i <= 30; i++){
         for(int j = 0; j <= 30; j++){
+
             fscanf(files[0], "%c", left);
             fscanf(files[1], "%c", middel);
             fscanf(files[2], "%c", rigth);
         }
-        fprintf(saveFile, "%s%s%s", left, middel, rigth);
+        fprintf(saveFile, "%s%s%s\n", left, middel, rigth);
     }
 
     for(int i = 0; i < 3; i++){

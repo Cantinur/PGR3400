@@ -1,8 +1,8 @@
 #include "parse.h"
 #include <string.h>
-#include <stdio.h>
 
-int main(int argc, char* argv[]){
+int main(int argc, char* argv[])
+{
     char* fileName = "mickey";
     int max = 6; //= (strncmp(fileName, "mickey", 6)) ? 6 : 15;
     
@@ -12,5 +12,6 @@ int main(int argc, char* argv[]){
         setFile(fileName, y);
         print();
     }
+    
     return 0;
 }
