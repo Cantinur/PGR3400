@@ -4,7 +4,7 @@
 #include <string.h>
 
 static FILE *files[3], *saveFile;
-static char *filePath, fileName[20], left[30], middel[30], rigth[30];
+static char* filePath, fileName[20], left[30], middel[30], rigth[30];
 
 int initiateFile()
 {
