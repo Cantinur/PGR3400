@@ -14,7 +14,6 @@ This is an ungraded, completely voluntary delivery which gives you an opportunit
 A short description of how the program and your thought processes have worked will help me understand your thought process, and will be required for the real exam. Try to avoid memory leaks and buffer overflows.\
 The delivery should contain the code and a readme.txt which explains any decisions made in the assignment.
 
-
 ### Merge ASCII-art
 
 With this assignment you will find to folders with multiple .txt-files. These contain files named “part_x_y_name.txt” these are 30x30 character parts of ASCII-drawings. That is, the asci-art is split into 30 by 30 squares of characters, and need to be puzzled together. After each line you will need to add a newline character.\
