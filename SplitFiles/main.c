@@ -1,6 +1,6 @@
 #include "parse.h"
 
-int main(int argc, char* argv[])
+int main(void)
 {
     int max = initiateFile();
 

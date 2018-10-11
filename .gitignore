@@ -3,3 +3,7 @@ SplitFiles/.DS_Store
 Struct&Arrays/.DS_Store
 .DS_Store
 .DS_Store
+.DS_Store
+SplitFiles/main.o
+SplitFiles/parse.o
+.DS_Store
