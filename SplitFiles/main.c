@@ -10,6 +10,7 @@ int main(void)
         setFile(y);
         printToFile();
     }
-
+    
+    closeSave();
     return 0;
 }

@@ -60,3 +60,8 @@ void printToFile()
     }
 }
 
+
+void closeSave()
+{
+    fclose(saveFile);
+}
