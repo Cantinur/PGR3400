@@ -3,11 +3,6 @@
 
 int main(int argc, char const *argv[])
 {
-    const int i = 42; // on static memory
-    int j = 42; // on stack
-    int *p = malloc(2/sizeof(int)); //on heap
-    *p = 42;
-
     int array[] = {1,2,3,4,5};
     int *pArray = malloc(5/sizeof(int));
     
