@@ -26,7 +26,6 @@ int main(void)
     }
     
     temp = head.next;
-    
     while(temp->data != -1)
     {
         printf("DATA: %d NEXT: %d PRIVIOUS: %d\n", temp->data, temp->next->data, temp->prev->data);
