@@ -21,8 +21,7 @@ int fourth(int a){
 
 PFI power[] = {identity, square, cube, fourth};
 
-int main(void)
-{
+int main(void){
     int result, exponent = 0, value = 0;
 
     do{
@@ -30,15 +29,12 @@ int main(void)
         printf("[1] identity\n[2] square\n[3] cube\n[4] fourth\n");
         scanf("%d", &exponent);
 
-        if(exponent > 0 && exponent <= sizeof(power)/sizeof(PFI))
-        {
+        if(exponent > 0 && exponent <= sizeof(power)/sizeof(PFI)){
             printf("Enter a value: ");
             scanf("%d", &value);
             result = power[exponent-1](value);
             printf("The result is %d\n", result);
-        }
-        else
-        {
+        }else{
             printf("Please type again, but this time take a number between 1 and 4\n");
             exponent = 0;
         }
